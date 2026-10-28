@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Góc nhỏ">
+  <title>Góc nhỏ</title>
+  <rect x="32" y="32" width="448" height="448" rx="96" fill="#F4EDE1"/>
+  <path d="M128 96 H300 L384 180 V416 H128 Z" fill="#2F5D50"/>
+  <path d="M300 96 V180 H384 Z" fill="#C8793A"/>
+  <path d="M256 330 C256 282 290 252 342 248 C340 300 304 330 256 330 Z" fill="#F4EDE1"/>
+  <path d="M256 330 C256 290 224 262 172 258 C174 306 210 330 256 330 Z" fill="#F4EDE1"/>
+  <line x1="256" y1="330" x2="256" y2="384" stroke="#F4EDE1" stroke-width="10" stroke-linecap="round"/>
+</svg>
