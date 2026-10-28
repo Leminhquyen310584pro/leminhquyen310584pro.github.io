@@ -29,7 +29,17 @@ header {
   border-bottom: 1px solid var(--vien);
 }
 
-header img { height: 56px; width: auto; display: block; }
+.thuong-hieu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 14px;
+  color: var(--xanh);
+  text-decoration: none;
+}
+.thuong-hieu img { width: 56px; height: 56px; display: block; }
+.thuong-hieu .ten { font-size: 34px; font-weight: 700; line-height: 1; }
+.thuong-hieu .phu { flex-basis: 100%; margin-top: 4px; font-size: 16px; font-style: italic; color: var(--cam); }
 
 nav { margin-top: 14px; font-size: 16px; }
 nav a { color: var(--xanh); text-decoration: none; margin-right: 18px; }
