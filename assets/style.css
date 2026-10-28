@@ -13,7 +13,7 @@ body {
   margin: 0;
   background: var(--nen);
   color: var(--chu);
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
   font-size: 18px;
   line-height: 1.75;
 }
