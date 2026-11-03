@@ -160,7 +160,7 @@ article li { margin-bottom: 8px; }
 .anh { height: 180px; background-size: cover; background-position: center; }
 .anh.a { background-image: url("anh-bia/loi-chao.svg"); }
 .anh.b { background-image: url("anh-bia/chanh-niem.svg"); }
-.anh.c { background: linear-gradient(160deg, #DCCBB0, #8A6446); }
+.anh.c { background-image: url("anh-bia/can-bang.svg"); }
 
 .noi-dung { padding-top: 22px; }
 
