@@ -159,7 +159,7 @@ article li { margin-bottom: 8px; }
 /* Ô ảnh bìa: khối màu tạm, thay bằng ảnh thật khi có */
 .anh { height: 180px; background-size: cover; background-position: center; }
 .anh.a { background-image: url("anh-bia/loi-chao.svg"); }
-.anh.b { background-image: url("anh-bia/chanh-niem.svg"); }
+.anh.b { background-image: url("anh-bia/chanh-niem-moi.svg"); }
 .anh.c { background-image: url("anh-bia/can-bang.svg"); }
 
 .noi-dung { padding-top: 22px; }
