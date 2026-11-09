@@ -116,7 +116,7 @@ input[type=number],input[type=text],#amt,#r-buy,#r-l,#r-gift,#r-units,#r-p,.form
     <div class="list" id="list" role="listbox" aria-label="Danh sách sản phẩm"></div>
   </section>
 
-  <section class="panel calc-panel" aria-labelledby="h-calc">
+  <section class="panel calc-panel" id="calc-panel" aria-labelledby="h-calc">
     <div class="panel-h"><h2 id="h-calc">Tính giá cuối cùng</h2><span>Theo file Bang_tinh_gia Q4</span></div>
     <div id="empty" class="empty">Chọn một sản phẩm bên trái để bắt đầu tính.</div>
     <div id="calc" hidden>
@@ -224,6 +224,7 @@ function applyCfg(i){
 }
 function select(i){
   selected = i;
+  if (window.matchMedia('(max-width: 879px)').matches) { setTimeout(() => { const p = document.getElementById('calc-panel'); if (p) p.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 60); }
   applyCfg(i);
   $('empty').hidden = true; $('calc').hidden = false;
   document.querySelectorAll('.item').forEach(b => b.setAttribute('aria-selected', String(+b.dataset.i === i)));
