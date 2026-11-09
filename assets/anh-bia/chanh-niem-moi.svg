@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Hoàng hôn trên mặt hồ tĩnh lặng, một bông sen nở nhẹ phản chiếu xuống nước, vòng gợn lan ra khắp mặt hồ">
+  <defs>
+    <linearGradient id="troi" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3E2819"/>
+      <stop offset="0.45" stop-color="#6E4730"/>
+      <stop offset="0.8" stop-color="#A9764F"/>
+      <stop offset="1" stop-color="#C8946A"/>
+    </linearGradient>
+    <radialGradient id="anhSang" cx="600" cy="400" r="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F4EBDD" stop-opacity="0.55"/>
+      <stop offset="0.35" stop-color="#E8D6BC" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#E8D6BC" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="nuoc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6B4430"/>
+      <stop offset="0.5" stop-color="#4A2E1E"/>
+      <stop offset="1" stop-color="#2A1A11"/>
+    </linearGradient>
+    <linearGradient id="canhSen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFBF3"/>
+      <stop offset="1" stop-color="#E3CDB0"/>
+    </linearGradient>
+    <linearGradient id="canhNgoai" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#E8D6BC"/>
+      <stop offset="1" stop-color="#F4EBDD"/>
+    </linearGradient>
+    <linearGradient id="phanChieu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4EBDD" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#F4EBDD" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="hat" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.95  0 0 0 0 0.9  0 0 0 0 0.82  0 0 0 0.09 0"/>
+    </filter>
+    <filter id="mo" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <!-- Bông sen, đặt gốc tại (600, 402) -->
+    <g id="sen">
+      <path d="M600 352 C548 352 500 330 470 300 C512 306 560 324 600 352 Z" fill="url(#canhNgoai)" opacity="0.9"/>
+      <path d="M600 352 C652 352 700 330 730 300 C688 306 640 324 600 352 Z" fill="url(#canhNgoai)" opacity="0.9"/>
+      <path d="M600 350 C560 338 522 306 512 258 C552 268 584 302 600 350 Z" fill="url(#canhSen)"/>
+      <path d="M600 350 C640 338 678 306 688 258 C648 268 616 302 600 350 Z" fill="url(#canhSen)"/>
+      <path d="M600 350 C566 322 556 280 600 214 C644 280 634 322 600 350 Z" fill="url(#canhSen)"/>
+      <path d="M600 350 C586 330 582 300 600 280 C618 300 614 330 600 350 Z" fill="#D9B98F" opacity="0.55"/>
+      <circle cx="600" cy="342" r="9" fill="#C8A071"/>
+    </g>
+  </defs>
+
+  <!-- Bầu trời hoàng hôn -->
+  <rect width="1200" height="675" fill="url(#troi)"/>
+  <rect width="1200" height="675" fill="url(#anhSang)"/>
+
+  <!-- Dải sương mỏng ở chân trời -->
+  <ellipse cx="600" cy="392" rx="620" ry="22" fill="#F4EBDD" opacity="0.14" filter="url(#mo)"/>
+
+  <!-- Mặt nước -->
+  <rect x="0" y="402" width="1200" height="273" fill="url(#nuoc)"/>
+  <line x1="0" y1="402" x2="1200" y2="402" stroke="#F4EBDD" stroke-width="1.5" opacity="0.35"/>
+
+  <!-- Phản chiếu bông sen và lá sen -->
+  <g opacity="0.22" transform="translate(0 804) scale(1 -1)">
+    <use href="#sen"/>
+  </g>
+
+  <!-- Lá sen nổi trên mặt nước -->
+  <ellipse cx="600" cy="410" rx="112" ry="16" fill="#3A2317" opacity="0.85"/>
+  <ellipse cx="600" cy="408" rx="112" ry="16" fill="none" stroke="#E8D6BC" stroke-width="1.2" opacity="0.35"/>
+
+  <!-- Vòng gợn lan ra từ bông sen -->
+  <g fill="none" stroke="#F4EBDD" stroke-linecap="round">
+    <ellipse cx="600" cy="410" rx="150" ry="28" stroke-width="2.4" opacity="0.6"/>
+    <ellipse cx="600" cy="412" rx="240" ry="46" stroke-width="2.2" opacity="0.45"/>
+    <ellipse cx="600" cy="414" rx="340" ry="66" stroke-width="2" opacity="0.32" stroke-dasharray="520 40"/>
+    <ellipse cx="600" cy="416" rx="450" ry="88" stroke-width="1.8" opacity="0.2"/>
+    <ellipse cx="600" cy="418" rx="560" ry="108" stroke-width="1.5" opacity="0.12" stroke-dasharray="400 60"/>
+  </g>
+
+  <!-- Bông sen -->
+  <use href="#sen"/>
+  <!-- Cuống sen -->
+  <line x1="600" y1="342" x2="600" y2="410" stroke="#E8D6BC" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Vài hạt sáng lơ lửng, rất nhẹ -->
+  <g fill="#F4EBDD">
+    <circle cx="220" cy="170" r="2" opacity="0.5"/>
+    <circle cx="310" cy="250" r="1.5" opacity="0.35"/>
+    <circle cx="905" cy="140" r="2.2" opacity="0.45"/>
+    <circle cx="980" cy="232" r="1.4" opacity="0.3"/>
+    <circle cx="150" cy="320" r="1.6" opacity="0.3"/>
+    <circle cx="1050" cy="320" r="1.8" opacity="0.35"/>
+  </g>
+
+  <!-- Hạt nhiễu giấy mịn -->
+  <rect width="1200" height="675" filter="url(#hat)" opacity="0.7"/>
+</svg>

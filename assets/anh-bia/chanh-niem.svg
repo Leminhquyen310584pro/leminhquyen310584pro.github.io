@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Mặt hồ phẳng lặng với những vòng gợn lan ra từ một giọt nước, phía xa là bông sen">
+  <defs>
+    <linearGradient id="nen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5C3D28"/>
+      <stop offset="1" stop-color="#8A5A3B"/>
+    </linearGradient>
+    <linearGradient id="nuoc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7A4F34"/>
+      <stop offset="1" stop-color="#4A3020"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#nen)"/>
+  <!-- Đường chân trời và mặt nước -->
+  <rect x="0" y="400" width="1200" height="275" fill="url(#nuoc)"/>
+  <line x1="0" y1="400" x2="1200" y2="400" stroke="#E8D6BC" stroke-width="2" opacity="0.4"/>
+  <!-- Vòng gợn lan ra trên mặt nước -->
+  <g fill="none" stroke="#E8D6BC" stroke-width="2.5" opacity="0.5">
+    <ellipse cx="600" cy="520" rx="110" ry="22"/>
+    <ellipse cx="600" cy="520" rx="200" ry="38" opacity="0.8"/>
+    <ellipse cx="600" cy="520" rx="300" ry="56" opacity="0.6"/>
+    <ellipse cx="600" cy="520" rx="410" ry="76" opacity="0.4"/>
+  </g>
+  <!-- Bông sen nhỏ phía xa -->
+  <g fill="#F4EBDD" opacity="0.95">
+    <path d="M600 330 C575 300 575 268 600 246 C625 268 625 300 600 330 Z"/>
+    <path d="M600 330 C560 316 540 292 544 268 C568 280 586 302 600 330 Z" opacity="0.85"/>
+    <path d="M600 330 C640 316 660 292 656 268 C632 280 614 302 600 330 Z" opacity="0.85"/>
+  </g>
+  <line x1="600" y1="330" x2="600" y2="400" stroke="#E8D6BC" stroke-width="3" opacity="0.6"/>
+</svg>

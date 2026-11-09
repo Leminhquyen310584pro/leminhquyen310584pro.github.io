@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Một quyển sổ mở dưới ánh đèn vàng ấm, gợi việc ghi lại điều mình học được">
+  <defs>
+    <radialGradient id="anh" cx="0.5" cy="0.45" r="0.6">
+      <stop offset="0" stop-color="#FBF6EE"/>
+      <stop offset="0.6" stop-color="#EAD3B5"/>
+      <stop offset="1" stop-color="#C9A27A"/>
+    </radialGradient>
+    <linearGradient id="trang" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFDF8"/>
+      <stop offset="1" stop-color="#F4EBDD"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#anh)"/>
+  <!-- Mặt bàn gỗ -->
+  <rect x="0" y="500" width="1200" height="175" fill="#5C3D28"/>
+  <line x1="0" y1="500" x2="1200" y2="500" stroke="#8A5A3B" stroke-width="3"/>
+  <!-- Quyển sổ mở -->
+  <g>
+    <path d="M320 380 Q460 350 600 400 L600 540 Q460 490 320 520 Z" fill="url(#trang)" stroke="#C9A27A" stroke-width="2"/>
+    <path d="M880 380 Q740 350 600 400 L600 540 Q740 490 880 520 Z" fill="url(#trang)" stroke="#C9A27A" stroke-width="2"/>
+    <line x1="600" y1="400" x2="600" y2="540" stroke="#C9A27A" stroke-width="2"/>
+    <!-- Dòng chữ gợi ý -->
+    <g stroke="#B5652E" stroke-width="3" stroke-linecap="round" opacity="0.6">
+      <line x1="370" y1="420" x2="560" y2="440"/>
+      <line x1="370" y1="450" x2="540" y2="466"/>
+      <line x1="370" y1="480" x2="520" y2="492"/>
+      <line x1="640" y1="440" x2="830" y2="420"/>
+      <line x1="660" y1="466" x2="830" y2="450"/>
+      <line x1="680" y1="492" x2="830" y2="480"/>
+    </g>
+  </g>
+  <!-- Ngọn đèn vàng ấm phía trên -->
+  <circle cx="1010" cy="170" r="150" fill="#F0C27A" opacity="0.25"/>
+  <circle cx="1010" cy="170" r="70" fill="#F0C27A" opacity="0.45"/>
+  <circle cx="1010" cy="170" r="22" fill="#FFF4D6"/>
+  <line x1="1010" y1="0" x2="1010" y2="148" stroke="#5C3D28" stroke-width="3"/>
+</svg>

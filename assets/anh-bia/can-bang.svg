@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Hòn đá đặt trên đòn cân giữa thăng bằng, gợi sự cân bằng">
+  <defs>
+    <linearGradient id="troi" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4EBDD"/>
+      <stop offset="1" stop-color="#EAD3B5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#troi)"/>
+  <!-- Mặt đất -->
+  <rect x="0" y="560" width="1200" height="115" fill="#5C3D28"/>
+  <!-- Trụ tựa -->
+  <polygon points="570,560 630,560 600,430" fill="#8A5A3B"/>
+  <!-- Đòn cân -->
+  <rect x="250" y="322" width="700" height="14" rx="7" fill="#5C3D28"/>
+  <!-- Hai đĩa cân -->
+  <path d="M290 336 L410 336 L395 376 L305 376 Z" fill="#B5652E"/>
+  <path d="M790 336 L910 336 L895 376 L805 376 Z" fill="#B5652E"/>
+  <!-- Hòn đá đặt giữa -->
+  <ellipse cx="600" cy="300" rx="34" ry="24" fill="#5C3D28"/>
+  <ellipse cx="600" cy="300" rx="34" ry="24" fill="none" stroke="#E8D6BC" stroke-width="2" opacity="0.5"/>
+  <!-- Đường chân trời nhẹ -->
+  <line x1="0" y1="560" x2="1200" y2="560" stroke="#C9A27A" stroke-width="2" opacity="0.5"/>
+</svg>
