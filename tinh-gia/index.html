@@ -537,6 +537,7 @@ const normChar = ch => ch.normalize('NFD').replace(/[\u0300-\u036f]/g, '').repla
 function normMap(s){ let n = ''; const map = []; for (let i = 0; i < s.length; i++) { const c = normChar(s[i]); for (let k = 0; k < c.length; k++) { n += c[k]; map.push(i); } } return { n, map }; }
 const norm = s => normMap(s).n;
 const TARGETS = DATA.map(d => norm(d.t + ' ' + d.g + ' ' + (SHORT[d.g] || '') + ' ' + (d.q && d.q !== '—' ? d.q : '') + ' ' + (d.u || '')));
+const NAMES = DATA.map(d => norm(d.t));
 const tokens = () => norm($('q').value.trim()).split(/\s+/).filter(Boolean);
 
 /* ghim và gần đây, lưu trên máy */
@@ -623,6 +624,12 @@ function renderList(){
   const toks = tokens(), g = gfilter, list = $('list'); list.innerHTML = '';
   const vis = [];
   DATA.forEach((d, i) => { if (g && d.g !== g) return; if (toks.length && !toks.every(t => TARGETS[i].includes(t))) return; vis.push(i); });
+  // Khi gõ từ khóa: sản phẩm có tên bắt đầu bằng từ khóa lên đầu, rồi đến tên có chứa từ khóa, cuối cùng là sản phẩm chỉ khớp theo tên nhóm.
+  if (toks.length) {
+    const rank = i => NAMES[i].startsWith(toks[0]) && toks.every(t => NAMES[i].includes(t)) ? 0 : toks.every(t => NAMES[i].includes(t)) ? 1 : 2;
+    const rk = new Map(vis.map(i => [i, rank(i)]));
+    vis.sort((x, y) => rk.get(x) - rk.get(y) || x - y);
+  }
   let last = null;
   vis.forEach(i => {
     const d = DATA[i];
